@@ -12,7 +12,7 @@ app.use(cors())
 app.use('/api',detailsrouter1)
 app.use('/bolly',detailsrouter2)
 
-const port = process.env.PORT || 8000
-app.listen(PORT,()=>{
+
+app.listen(process.env.PORT||8000,()=>{
     console.log("app is running")
 })
